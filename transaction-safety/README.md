@@ -1,7 +1,5 @@
 # Transaction Security Guide
 
-#![Transaction Security](https://quasarstaking.ai/assets/transaction-banner.png)
-
 Welcome to the Transaction Security Guide. Learn how to verify and secure your transactions in the Cosmos ecosystem using our AI-powered tools.
 
 ## Table of Contents
