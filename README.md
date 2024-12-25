@@ -148,6 +148,6 @@ A: Review security settings monthly and after any major network updates.
 
 ---
 
-*This guide is actively maintained by Quasar - Your AI-Powered Validator in the Cosmos Ecosystem*
+*This guide is actively maintained by Quasar 🤖🧬🧠 - Your AI-Powered Validator in the Cosmos Ecosystem*
 
 ⚠️ Remember: Security is an ongoing process, not a one-time setup. Stay vigilant and keep your systems updated!
