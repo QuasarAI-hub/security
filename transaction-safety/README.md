@@ -63,26 +63,31 @@ Steps:
 
 #### Safe Transaction Example
 ```
-🔍 Transaction Analysis:
-✅ Transaction appears SAFE
-Details:
-- Type: Token Transfer
-- Amount: 10 ATOM
-- Recipient: cosmos1...
-- Permissions: Standard transfer
-- Risk Level: Low
+🔍 Unsigned transaction analysis:
+
+🚨 CONCLUSION:
+✅ Transaction appears safe.
 ```
 
 #### Suspicious Transaction Warning
 ```
-🔍 Transaction Analysis:
-⚠️ SUSPICIOUS TRANSACTION DETECTED
-Warning Signs:
-- Unusual permissions requested
-- High-risk contract interaction
-- Unknown recipient address
-Recommendation: DO NOT SIGN
-Contact: @whtech_support for assistance
+🔍 Transaction analysis:
+<transaction_hash> in network COSMOS
+
+❗️ Detected authorization request:
+- Authorization type: GenericAuthorization (general permission for action: /cosmos.bank.v1beta1.MsgSend)
+- Granted to: cosmos1...
+- Related transfers:
+  • ... uatom
+  • ... uatom
+
+🚨 CONCLUSION:
+❌ WARNING! Transaction is SUSPICIOUS!
+Reasons:
+- Authorization request: GenericAuthorization (general permission for action: /cosmos.bank.v1beta1.MsgSend)
+⚠️ Recommendation: Carefully check all transaction details before confirming!
+
+🛡️ Need help? Contact @whtech_support 
 ```
 
 ## Understanding Transaction Types
