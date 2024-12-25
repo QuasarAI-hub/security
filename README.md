@@ -94,7 +94,6 @@ Our AI-powered bot helps verify transactions before signing:
 ### For Users
 - [Transaction Safety Guide](./transaction-safety/README.md)
 - [Wallet Security Best Practices](./wallet-security/README.md)
-- [Account Protection Guide](./account-protection/README.md)
 
 ### For Validators
 - [Server Security Guide](./server-protection/README.md)
