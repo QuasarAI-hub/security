@@ -13,7 +13,7 @@ Welcome to the Transaction Security Guide. Learn how to verify and secure your t
 ## Quick Start
 
 ### 1. Access Our Bot
-- English Bot: [@QuasarValidatorEngBot](https://t.me/QuasarValidatorEngBot)
+- English AI Bot: [@QuasarValidatorEngBot](https://t.me/QuasarValidatorEngBot)
 - Main Channel: [Quasar Staking ENG](https://t.me/quasarstakingeng)
 - Support Chat: [@quasareng](https://t.me/quasareng)
 
@@ -28,7 +28,8 @@ Example: /tx cosmos 1F0FD1696E0D8556688018A579A03BA9E6284680ECCEA5E24A1A8589E645
 Example: /tx_h {"approve":{...}}
 ```
 
-## Transaction Verification Bot
+## AI Neuroworker
+##### one of function is checking transactions by transaction hash or raw json of transaction
 
 ### Supported Networks
 - Cosmos Hub (ATOM)
