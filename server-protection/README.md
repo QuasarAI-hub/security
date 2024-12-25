@@ -1,7 +1,5 @@
 # Server Security Guide
 
-![Server Security](https://quasarstaking.ai/assets/server-banner.png)
-
 Welcome to the Server Security Guide. This comprehensive guide will help you secure your validator node and maintain high security standards in the Cosmos ecosystem.
 
 ## Table of Contents
@@ -30,13 +28,13 @@ Welcome to the Server Security Guide. This comprehensive guide will help you sec
 ### Create Admin User
 ```bash
 # Add new user
-sudo adduser admin
+sudo adduser val
 
 # Add to sudo group
-sudo usermod -aG sudo admin
+sudo usermod -aG sudo val
 
 # Switch to new user
-su - admin
+su - val
 ```
 
 ### System Updates
@@ -59,7 +57,7 @@ sudo apt install ufw fail2ban unattended-upgrades
 ssh-keygen -t ed25519 -C "validator@cosmos"
 
 # Copy key to server
-ssh-copy-id -i ~/.ssh/id_ed25519.pub admin@SERVER_IP
+ssh-copy-id -i ~/.ssh/id_ed25519.pub val@SERVER_IP
 ```
 
 ### Secure SSH Configuration
@@ -82,8 +80,6 @@ MaxAuthTries 3
 PubkeyAuthentication yes
 AuthenticationMethods publickey
 
-# Restrict SSH access
-Port 2222  # Change default port
 ```
 
 Restart SSH service:
@@ -100,7 +96,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
 # Allow SSH (use your custom port)
-sudo ufw allow 2222/tcp
+sudo ufw allow 22/tcp
 
 # Allow validator ports (example for Cosmos)
 sudo ufw allow 26656/tcp  # P2P
@@ -117,7 +113,7 @@ sudo ufw enable
 sudo ufw allow from TRUSTED_IP to any port 26657
 
 # Rate limiting
-sudo ufw limit 2222/tcp
+sudo ufw limit 22/tcp
 
 # Logging
 sudo ufw logging on
@@ -135,7 +131,7 @@ maxretry = 3
 
 [sshd]
 enabled = true
-port = 2222
+port = 22
 filter = sshd
 logpath = /var/log/auth.log
 maxretry = 3
