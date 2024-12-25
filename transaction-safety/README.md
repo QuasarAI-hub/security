@@ -28,7 +28,7 @@ Example: /tx cosmos 1F0FD1696E0D8556688018A579A03BA9E6284680ECCEA5E24A1A8589E645
 Example: /tx_h {"approve":{...}}
 ```
 
-## AI Neuroworker
+## 🧠 AI Neuroworker
 ##### one of function is checking transactions by transaction hash or raw json of transaction
 
 ### Supported Networks
