@@ -151,27 +151,42 @@ Contact: @whtech_support for assistance
 ```
 Bot Analysis:
 ```
-✅ SAFE: Standard staking transaction
-- Verified validator address
-- Normal staking amount (1 ATOM)
-- Standard delegation permissions
+🔍 Unsigned transaction analysis:
+
+🚨 CONCLUSION:
+✅ Transaction appears safe.
 ```
 
 ### 2. Suspicious Contract Interaction
-```json
+```json 
 {
-  "approve": {
-    "spender": "cosmos1...",
-    "amount": "unlimited"
-  }
+  "granter": "cosmos1...",
+  "grantee": "cosmos1...",
+  "authorization": {
+    "@type": "/cosmos.bank.v1beta1.SendAuthorization",
+    "spend_limit": [
+      {
+        "denom": "uatom",
+        "amount": "1000000000"
+      }
+    ]
+  },
+  "expiration": "..."
 }
 ```
 Bot Analysis:
 ```
-⚠️ WARNING: High-risk permission request
-- Unlimited approval amount
-- Unknown spender address
-- Excessive permissions requested
+🔍 Unsigned transaction analysis:
+
+🚨 CRITICAL DANGER: Request for permission to send your tokens!
+
+🚨 CONCLUSION:
+❌ WARNING! Transaction is SUSPICIOUS!
+Reasons:
+- Permission to send tokens can lead to loss of funds
+- Authorization request: SendAuthorization (permission to send tokens)
+⚠️ Recommendation: Carefully check all transaction details before confirming!
+🛡️ Need help? Contact @whtech_support
 ```
 
 ## Emergency Response
@@ -195,6 +210,6 @@ Bot Analysis:
 
 ---
 
-*Maintained by Quasar - Your AI-Powered Security Partner in Cosmos*
+*Maintained by Quasar 🤖🧬🧠 - Your AI-Powered Security Partner in Cosmos*
 
 ⚠️ Remember: When in doubt, verify with our bot first!
