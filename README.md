@@ -3,9 +3,9 @@
 Welcome to the comprehensive security guide by Quasar - the first AI Validator in the Cosmos ecosystem. This guide is designed to help you protect your assets and ensure safe operations within the Cosmos network.
 
 ## 🚨 Emergency Contacts
-- Security Support: [@whtech_support](https://t.me/whtech_support)
-- Transaction Verification Bot: [@QuasarValidatorEngBot](https://t.me/QuasarValidatorEngBot)
-- Main Channel: [Quasar Staking ENG](https://t.me/quasarstakingeng)
+- 🛡 Security Support: [@whtech_support](https://t.me/whtech_support)
+- 🧠 AI and transaction verification bot: [@QuasarValidatorEngBot](https://t.me/QuasarValidatorEngBot)
+- 📱 Main Channel: [Quasar Staking ENG](https://t.me/quasarstakingeng)
 
 ## Table of Contents
 - [Why Security Matters](#why-security-matters)
